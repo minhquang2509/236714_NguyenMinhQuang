@@ -12,5 +12,6 @@
 - `/backend`: Mã nguồn Backend API
 - `/frontend`: Mã nguồn Frontend React
 
-## Hướng dẫn chạy chương trình
-(Sẽ cập nhật chi tiết ở các phần sau)
+## Tiến độ thực hiện
+- [x] Câu 1: Khởi tạo repository và quản lý mã nguồn bằng GitHub
+- [x] Câu 2: Tạo cơ sở dữ liệu MongoDB Atlas (Database: `236714_NguyenMinhQuang`, Collection: `foods`) và thêm dữ liệu mẫu
