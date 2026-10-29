@@ -11,7 +11,3 @@
 ## Cấu trúc dự án
 - `/backend`: Mã nguồn Backend API
 - `/frontend`: Mã nguồn Frontend React
-
-## Tiến độ thực hiện
-- [x] Câu 1: Khởi tạo repository và quản lý mã nguồn bằng GitHub
-- [x] Câu 2: Tạo cơ sở dữ liệu MongoDB Atlas (Database: `236714_NguyenMinhQuang`, Collection: `foods`) và thêm dữ liệu mẫu
