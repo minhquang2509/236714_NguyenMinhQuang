@@ -11,3 +11,10 @@
 ## Cấu trúc dự án
 - `/backend`: Mã nguồn Backend API
 - `/frontend`: Mã nguồn Frontend React
+
+## Câu 5: Đóng gói Backend bằng Docker và Docker Hub
+- **Docker Hub Image Link**: `minhquang2509/backend:latest`
+
+### Hướng dẫn chạy Backend qua Docker:
+docker pull minhquang2509/backend:latest
+docker run -d -p 5000:5000 -e MONGO_URI="<chuoi_ket_noi_mongodb>" minhquang2509/backend:latest
