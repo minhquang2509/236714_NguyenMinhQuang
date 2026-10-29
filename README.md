@@ -18,3 +18,10 @@
 ### Hướng dẫn chạy Backend qua Docker:
 docker pull minhquang2509/backend:latest
 docker run -d -p 5000:5000 -e MONGO_URI="<chuoi_ket_noi_mongodb>" minhquang2509/backend:latest
+
+## Câu 6: Đóng gói Frontend bằng Docker và Docker Hub
+- **Docker Hub Image Link**: `minhquang2509/frontend:latest`
+
+### Hướng dẫn chạy:
+docker pull minhquang2509/frontend:latest
+docker run -d -p 3000:80 minhquang2509/frontend:latest

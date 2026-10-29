@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || '';
+// ĐÂY LÀ ĐIỂM SỬA QUAN TRỌNG: Chỉ giữ lại domain gốc
+const API_BASE = import.meta.env.VITE_API_URL || 'https://api-236714.onrender.com';
 
 function App() {
   const [foods, setFoods] = useState([]);
@@ -21,6 +22,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
+      // Ghép chuẩn /api/foods
       const url = keyword ? `${API_BASE}/api/foods?search=${encodeURIComponent(keyword)}` : `${API_BASE}/api/foods`;
       const res = await axios.get(url);
       setFoods(res.data);
@@ -90,7 +92,6 @@ function App() {
   return (
     <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '30px 20px', fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif', color: '#333' }}>
       
-      {/* Tiêu đề đã được chỉnh sửa kích thước và line-height để không bị chồng */}
       <h1 style={{ fontSize: '24px', textAlign: 'center', marginBottom: '25px', lineHeight: '1.4', color: '#2c3e50' }}>
         Hệ Thống Quản Lý Món Ăn<br />
         <span style={{ fontSize: '18px', fontWeight: 'normal', color: '#555' }}>MSSV: 236714 - Nguyễn Minh Quang</span>
